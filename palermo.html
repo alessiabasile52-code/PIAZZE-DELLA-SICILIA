@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Dettaglio - Piazza Pretoria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold-bg: #FEEAB6; --page-bg: #F9F7F2; --text-dark: #2C2C2C; }
+        body { margin: 0; font-family: 'Montserrat', sans-serif; background: var(--page-bg); color: var(--text-dark); line-height: 1.6; }
+        header, footer { background: var(--gold-bg); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; }
+        header nav a { text-decoration: none; color: var(--text-dark); margin-left: 20px; font-weight: bold; text-transform: uppercase; font-size: 0.8em; }
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 40px; }
+        .back-link { text-decoration: none; color: var(--text-dark); font-size: 1.5em; display: block; margin-bottom: 20px; }
+        
+        .header-content { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px; }
+        .titles h1 { font-family: 'Playfair Display', serif; font-size: 3.5em; margin: 0; }
+        .titles h2 { font-size: 2em; margin: 0; font-weight: normal; }
+        
+        .main-layout { display: flex; gap: 40px; margin-top: 30px; }
+        .left-col { flex: 1.5; }
+        .right-col { flex: 1; }
+        
+        .hero-img { width: 100%; border-radius: 2px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .data-list { list-style: none; padding: 0; margin: 20px 0; }
+        .data-list li::before { content: "• "; font-weight: bold; }
+        
+        .monuments-box { background: rgba(0,0,0,0.02); padding: 20px; border-left: 4px solid var(--gold-bg); }
+        .monuments-box h4 { margin-top: 0; }
+        
+        footer { justify-content: center; margin-top: 60px; font-weight: bold; text-transform: uppercase; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <header>
+        <div>Piazze Di Sicilia</div>
+        <nav>
+            <a href="#">MAPPA</a>
+            <a href="index.html">ARCHIVIO</a>
+            <a href="#">INFO</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-link">&lt; Torna alla lista</a>
+        
+        <div class="header-content">
+            <div class="titles">
+                <h1>Piazza Pretoria</h1>
+                <h2>Palermo</h2>
+            </div>
+        </div>
+
+        <div class="main-layout">
+            <div class="left-col">
+                <h3>Dati Tecnici:</h3>
+                <ul class="data-list">
+                    <li>Forma: Semicircolare/Chiusa.</li>
+                    <li>Superficie: Circa 1.100 m².</li>
+                    <li>Pavimentazione: Basolato grigio di pietra d'Asfaro.</li>
+                    <li>Accessibilità: Pedonale.</li>
+                </ul>
+                <p><strong>Storia e Descrizione:</strong> Nata nel XVI secolo per ospitare la monumentale fontana originariamente destinata a una villa fiorentina. La piazza è un raro esempio di spazio progettato "attorno" a un oggetto d'arte. Il soprannome "della Vergogna" deriva dalla nudità delle statue, che secondo la tradizione popolare imbarazzavano i fedeli e le monache dei conventi circostanti.</p>
+            </div>
+
+            <div class="right-col">
+                <img src="CSS/SIC-PA-01.jpg" class="hero-img" alt="Piazza Pretoria">
+                
+                <div class="monuments-box" style="margin-top: 30px;">
+                    <h4>Monumenti Chiave:</h4>
+                    <ul style="padding-left: 20px; font-size: 0.9em;">
+                        <li><strong>Fontana Pretoria:</strong> Capolavoro del Camilliani con 48 statue marmoree.</li>
+                        <li><strong>Palazzo delle Aquile:</strong> Sede del Comune di Palermo.</li>
+                        <li><strong>Chiesa di Santa Caterina:</strong> Splendido esempio di barocco misto.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>INFO PROGETTO - CREDITS</footer>
+</body>
+</html>

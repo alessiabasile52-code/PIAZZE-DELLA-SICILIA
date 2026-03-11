@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Dettaglio - Piazza Duomo Ragusa Ibla</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold-bg: #FEEAB6; --page-bg: #F9F7F2; --text-dark: #2C2C2C; }
+        body { margin: 0; font-family: 'Montserrat', sans-serif; background: var(--page-bg); color: var(--text-dark); line-height: 1.6; }
+        header, footer { background: var(--gold-bg); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; }
+        header nav a { text-decoration: none; color: var(--text-dark); margin-left: 20px; font-weight: bold; text-transform: uppercase; font-size: 0.8em; }
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 40px; }
+        .back-link { text-decoration: none; color: var(--text-dark); font-size: 1.5em; display: block; margin-bottom: 20px; }
+        .titles h1 { font-family: 'Playfair Display', serif; font-size: 3.5em; margin: 0; }
+        .titles h2 { font-size: 2em; margin: 0; font-weight: normal; color: #D4AF37; }
+        .main-layout { display: flex; gap: 40px; margin-top: 30px; }
+        .left-col { flex: 1.5; }
+        .right-col { flex: 1; }
+        .hero-img { width: 100%; border-radius: 2px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .data-list { list-style: none; padding: 0; margin: 20px 0; }
+        .data-list li::before { content: "• "; font-weight: bold; color: #D4AF37; }
+        .monuments-box { background: rgba(0,0,0,0.02); padding: 20px; border-left: 4px solid var(--gold-bg); }
+        footer { justify-content: center; margin-top: 60px; font-weight: bold; text-transform: uppercase; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <header><div>Piazze Di Sicilia</div><nav><a href="index.html">MAPPA</a><a href="index.html">ARCHIVIO</a><a href="#">INFO</a></nav></header>
+    <div class="container">
+    <a href="index.html" class="back-link">&lt; Torna alla lista</a>
+    <div class="titles"><h1>Piazza Garibaldi</h1><h2>Caltanissetta</h2></div>
+    <div class="main-layout">
+        <div class="left-col">
+            <h3>Dati Tecnici:</h3>
+            <ul class="data-list">
+                <li>Forma: Trapezoidale (incrocio di assi).</li>
+                <li>Materiale: Pietra lavica e pietra di Sabucina.</li>
+                <li>Accessibilità: Pedonale.</li>
+            </ul>
+            <p><strong>Storia e Descrizione:</strong> È il salotto centrale della città, punto d'incontro dei due corsi storici. È il palcoscenico dei riti più antichi della Sicilia interna, come le processioni della Settimana Santa, incorniciata tra la Cattedrale e le architetture civili.</p>
+        </div>
+        <div class="right-col">
+            <img src="CSS/SIC-CL-01.jpg" class="hero-img" alt="Caltanissetta">
+            <div class="monuments-box" style="margin-top: 30px;">
+                <h4>Monumenti Chiave:</h4>
+                <ul style="padding-left: 20px; font-size: 0.9em;">
+                    <li><strong>Fontana del Tritone:</strong> Simbolo bronzeo della città.</li>
+                    <li><strong>Cattedrale di S. Maria la Nova:</strong> Affreschi del Borremans.</li>
+                    <li><strong>Chiesa di San Sebastiano:</strong> Facciata policroma.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>INFO PROGETTO - CREDITS</footer>
+</body>
+</html>

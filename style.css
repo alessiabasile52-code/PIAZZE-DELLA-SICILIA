@@ -1,0 +1,128 @@
+        :root {
+            --basalt: #2C2C2C;       
+            --gold: #D4AF37;         
+            --parchment: #F9F7F2;   
+            --card-bg: #FEEAB6;      
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--parchment);
+            color: var(--basalt);
+            line-height: 1.4;
+        }
+
+       
+        header {
+            background-color: #FEEAB6;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--basalt);
+            margin-left: 30px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        nav a.active {
+            color: var(--gold);
+        }
+
+        
+        main {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+
+        
+        .grid-piazze {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 40px;
+        }
+
+        
+        .card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #ccc;
+        }
+
+        .card-content {
+            background-color: #FEEAB6; /* Sfondo giallo chiaro della card */
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .card-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin: 0;
+        }
+
+        .card-content h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 5px 0 10px 0;
+        }
+
+        .card-content p {
+            font-size: 0.85rem;
+            margin: 0;
+            text-align: justify;
+        }
+
+        .card-link {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: var(--basalt);
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        
+        footer {
+            background-color: #FEEAB6;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+       
+        @media (max-width: 900px) {
+            .grid-piazze { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .grid-piazze { grid-template-columns: 1fr; }
+        }

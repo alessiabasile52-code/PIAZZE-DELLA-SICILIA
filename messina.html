@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Dettaglio - Piazza Duomo Messina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold-bg: #FEEAB6; --page-bg: #F9F7F2; --text-dark: #2C2C2C; }
+        body { margin: 0; font-family: 'Montserrat', sans-serif; background: var(--page-bg); color: var(--text-dark); line-height: 1.6; }
+        header, footer { background: var(--gold-bg); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; }
+        header nav a { text-decoration: none; color: var(--text-dark); margin-left: 20px; font-weight: bold; text-transform: uppercase; font-size: 0.8em; }
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 40px; }
+        .back-link { text-decoration: none; color: var(--text-dark); font-size: 1.5em; display: block; margin-bottom: 20px; }
+        .titles h1 { font-family: 'Playfair Display', serif; font-size: 3.5em; margin: 0; }
+        .titles h2 { font-size: 2em; margin: 0; font-weight: normal; color: #D4AF37; }
+        .main-layout { display: flex; gap: 40px; margin-top: 30px; }
+        .left-col { flex: 1.5; }
+        .right-col { flex: 1; }
+        .hero-img { width: 100%; border-radius: 2px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .data-list { list-style: none; padding: 0; margin: 20px 0; }
+        .data-list li::before { content: "• "; font-weight: bold; color: #D4AF37; }
+        .monuments-box { background: rgba(0,0,0,0.02); padding: 20px; border-left: 4px solid var(--gold-bg); }
+        footer { justify-content: center; margin-top: 60px; font-weight: bold; text-transform: uppercase; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <header>
+        <div>Piazze Di Sicilia</div>
+        <nav><a href="index.html">MAPPA</a><a href="index.html">ARCHIVIO</a><a href="#">INFO</a></nav>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-link">&lt; Torna alla lista</a>
+        <div class="titles">
+            <h1>Piazza Duomo</h1>
+            <h2>Messina</h2>
+        </div>
+
+        <div class="main-layout">
+            <div class="left-col">
+                <h3>Dati Tecnici:</h3>
+                <ul class="data-list">
+                    <li>Forma: Rettangolare ampia.</li>
+                    <li>Superficie: Circa 6.000 m².</li>
+                    <li>Materiali: Pietra calcarea e marmi.</li>
+                    <li>Accessibilità: Pedonale.</li>
+                </ul>
+                <p><strong>Storia e Descrizione:</strong> Cuore della ricostruzione post-1908, la piazza ospita l'Orologio Astronomico più grande del mondo. Rappresenta la resilienza di Messina, bilanciando ampi spazi aperti antisismici con la monumentalità del Duomo ricostruito in forme normanne.</p>
+            </div>
+            <div class="right-col">
+                <img src="CSS/SIC-ME-01.jpg" class="hero-img" alt="Messina">
+                <div class="monuments-box" style="margin-top: 30px;">
+                    <h4>Monumenti Chiave:</h4>
+                    <ul style="padding-left: 20px; font-size: 0.9em;">
+                        <li><strong>Campanile Astronomico:</strong> Orologio meccanico con figure animate.</li>
+                        <li><strong>Fontana di Orione:</strong> Capolavoro rinascimentale del Montorsoli.</li>
+                        <li><strong>Basilica Cattedrale:</strong> Imponente struttura normanna.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>INFO PROGETTO - CREDITS</footer>
+</body>
+</html>
